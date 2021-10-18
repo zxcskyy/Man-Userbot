@@ -149,7 +149,7 @@ async def stop_musik(event):
 
 @bot.on(man_cmd(outgoing=True, pattern=r"delraw$"))
 async def _(event):
-    await runcmd("rm -rf raw_files/")
+    await runcmd("rm -rf ./raw_files/*.raw")
     await edit_or_reply(event, "**Berhasil Menghapus Cache File RAW**")
 
 
@@ -185,6 +185,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk memberhentikan lagu yang sedang diputar\
         \n\n  •  **Syntax :** `{cmd}resume`\
         \n  •  **Function : **Untuk melanjutkan pemutaran lagu yang sedang diputar\
+        \n\n  •  **Syntax :** `{cmd}delraw`\
+        \n  •  **Function : **Untuk menghapus file cache bekas play music (Rekomendasi sesudah `{cmd}delraw` ketik `{cmd}restart`)\
         \n\n  •  **NOTE :** Play Music hanya bisa di 1 Grup Chat saja, untuk memutar di GC lain ketik `{cmd}end` terlebih dahulu\
     "
     }
