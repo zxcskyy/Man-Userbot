@@ -4,11 +4,9 @@
 import asyncio
 from collections import deque
 
-from telethon import events
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
 
 from userbot import ALIVE_NAME, CMD_HELP, bot
-from userbot.events import register
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
