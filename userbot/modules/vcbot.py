@@ -3,7 +3,6 @@
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-import os
 from asyncio import QueueEmpty
 
 from pytgcalls.types import Update
@@ -173,13 +172,12 @@ async def stream_end_handler(c, u: Update):
                 ),
             ),
         )
-    os.system("rm -rf ./raw_files/")
 
 
 CMD_HELP.update(
     {
         "voiceplay": f"**Plugin : **`voiceplay`\
-        \n\n  •  **Syntax :** `{cmd}play` judul lagu\
+        \n\n  •  **Syntax :** `{cmd}play` <judul lagu/link yt>\
         \n  •  **Function : **Untuk Memutar lagu di voice chat group dengan akun kamu\
         \n\n  •  **Syntax :** `{cmd}end`\
         \n  •  **Function : **Untuk Memberhentikan lagu yang di putar di voice chat group\
