@@ -14,7 +14,7 @@ from youtube_search import YoutubeSearch
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot, call_py
-from userbot.events import man_cmd, register
+from userbot.events import man_cmd
 from userbot.utils import download_lagu, edit_or_reply, runcmd
 from userbot.utils.converter import convert
 from userbot.utils.queues import queues
@@ -151,7 +151,7 @@ async def stop_musik(event):
 @bot.on(man_cmd(outgoing=True, pattern=r"delraw$"))
 async def _(event):
     await runcmd("rm -rf raw_files/")
-    await edit_or_reply(event, "**Berhasil Menghapus Cache File RAW**") 
+    await edit_or_reply(event, "**Berhasil Menghapus Cache File RAW**")
 
 
 @call_py.on_stream_end()
@@ -174,7 +174,6 @@ async def stream_end_handler(c, u: Update):
             ),
         )
     os.system("rm -rf ./raw_files/*.raw")
-    
 
 
 CMD_HELP.update(
