@@ -163,7 +163,7 @@ async def gban(event):
         )
 
     if BOTLOG and count != 0:
-        reply = await event.get_reply_message()
+        await event.get_reply_message()
         if reason:
             await event.client.send_message(
                 BOTLOG_CHATID,
