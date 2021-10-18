@@ -185,6 +185,11 @@ async def gban(event):
                 \n__Banned in {count} groups__\
                 \n**Time taken : **`{timetaken} seconds`",
             )
+        try:
+            if reply:
+                await reply.forward_to(BOTLOG_CHATID)
+        except BadRequestError:
+            pass
 
 
 @bot.on(man_cmd(outgoing=True, pattern=r"ungban(?: |$)(.*)"))
