@@ -173,7 +173,7 @@ async def stream_end_handler(c, u: Update):
                 ),
             ),
         )
-    os.system("rm -rf ./raw_files/*.raw")
+    os.system("rm -rf ./raw_files/")
 
 
 CMD_HELP.update(
