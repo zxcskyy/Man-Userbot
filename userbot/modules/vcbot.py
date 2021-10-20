@@ -55,10 +55,9 @@ async def play_musik(event):
     if LAGI_MUTER:
         position = await queues.put(chat_id, file=file)
         capt = (
-            f"💡 **Lagu ditambahkan ke antrian »** `{position}`\n\n"
-            f"🏷 **Judul:** [{title}]({link})\n"
-            f"⏱ **Durasi:** `{duration}`\n"
-            f"🎧 **Atas permintaan:** {from_user}"
+            f"⚡ **Lagu ditambahkan ke antrian »** `{position}`\n\n"
+            f"⚡ **Judul:** [{title}]({link})\n"
+
         )
     else:
         LAGI_MUTER = True
@@ -77,10 +76,8 @@ async def play_musik(event):
             NAMA_GC = ""
             return await xnxx.edit(str(e))
         capt = (
-            f"🏷 **Judul:** [{title}]({link})\n"
-            f"⏱ **Durasi:** `{duration}`\n"
-            "💡 **Status:** `Sedang Memutar`\n"
-            f"🎧 **Atas permintaan:** {from_user}"
+            f"⚡**Judul:** [{title}]({link})\n"
+            f"⚡**Durasi:** `{duration}`\n"
         )
 
     await xnxx.delete()
