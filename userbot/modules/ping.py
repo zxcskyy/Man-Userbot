@@ -58,18 +58,18 @@ async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await ping.edit("**✣**")
-    await ping.edit("**✣✣**")
-    await ping.edit("**✣✣✣**")
-    await ping.edit("**✣✣✣✣**")
+    await ping.edit("**PING.**")
+    await ping.edit("**PING..**")
+    await ping.edit("**PING...**")
+    await ping.edit("**PING....**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await ping.edit(
         f"**PONG!!🏓**\n"
-        f"✣ **Pinger** - `%sms`\n"
-        f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"🔥 **Pinger** - `%sms`\n"
+        f"🔥 **Uptime -** `{uptime}` \n"
+        f"**Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -189,7 +189,7 @@ async def _(speed):
 async def _(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
-    await pong.edit("`Sepong.....🏓`")
+    await pong.edit("`Pong.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
     await pong.edit("🏓 **Ping!**\n`%sms`" % (duration))
@@ -205,7 +205,7 @@ async def risman(ganteng):
 # DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"usange(?: |$)(.*)"))
+@bot.on(man_cmd(outgoing=True, pattern=r"Fus(?: |$)(.*)"))
 async def _(e):
     user = await bot.get_me()
     sleep(1)
