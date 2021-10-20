@@ -202,9 +202,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Man-Userbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Man-Userbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru.\
     "
     }
 )
