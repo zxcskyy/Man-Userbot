@@ -25,7 +25,7 @@ from userbot import bot
 from userbot.events import man_cmd
 
 
-@bot.on(man_cmd(pattern="helpme", outgoing=True))
+@bot.on(man_cmd(pattern="kyy", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
