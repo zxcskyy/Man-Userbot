@@ -33,9 +33,9 @@ async def help(event):
             string += "`" + str(i)
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await event.edit(
-            f"**✦ Daftar Perintah Untuk [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot):**\n"
-            f"**✦ Jumlah** `{len(modules)}` **Modules**\n"
-            f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
+            f"**🔥 Daftar Perintah Untuk [zxcskyy](https://github.com/zxcskyy):**\n"
+            f"**🔥 Jumlah** `{len(modules)}` **Modules**\n"
+            f"**🔥 Master:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
             f"\n\nSupport @{CHANNEL}",
         )
